@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>the city school</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Demo styles -->
+  <style>
+
+
+  </style>
+</head>
+
+<body>
+    
+
+ 
+  
+
+   <div class="slider-side">
+    <div class="m-8 text-4xl tracking-wide text-blue-800  text-center">
+        <h3 ><b>Our Schools</b></h3>
+    </div>
+
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper object-center">
+      <div class="swiper-slide ">
+        <img src="./pictures/academia-de-pulilan.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./pictures/cedar.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./pictures/ibn-khaldoun.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./pictures/tadika-twinkle-star.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./pictures/tcs-dubai.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./pictures/tcs-international-saudi.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./pictures/tcs-international-sharjah.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./pictures/the-smart-college.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./pictures/the-smart-school.png" alt="">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+   </div>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+
+
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,
+      spaceBetween: 60,
+      centeredSlides: true,
+      pagination: {
+
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
+</html>
